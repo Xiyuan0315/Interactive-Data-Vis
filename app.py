@@ -7,8 +7,8 @@ import json
 from pathlib import Path
 
 # Set the paths for the data
-folder_path = Path('/Users/xiyuanzhang/Desktop/learn/interactive_datav/final_proj/single_level')
-heatmap_folder_path = Path('/Users/xiyuanzhang/Desktop/learn/interactive_datav/final_proj/heatmap')
+folder_path = Path('./single_level')
+heatmap_folder_path = Path('./heatmap')
 
 # Initialize cell types from the dataset
 cell_types = [file.stem for file in folder_path.glob('*') if not file.name.startswith('.')]
